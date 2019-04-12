@@ -1,0 +1,145 @@
+body{
+	background-color: 	#FAF0E6;
+
+}
+
+
+.container{
+	text-align: center;
+	width: 100%;
+}
+
+.navbar-custom{
+	background-color: 	#696969;
+}
+
+.dropdown-menu{
+	background-color: 	#696969;
+	border: none;
+	width: 40%;
+}
+
+.dropdown-item{
+	color: white;
+}
+
+.dropdown-item:hover{
+	color: white;
+	background-color: 	#778899;
+}
+.photo img
+{
+	width: 100%;
+	height: auto;
+}
+
+.photo img:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+#text{
+	margin-top: 30px;
+	margin-bottom: 40px;
+	font-size: 20px;
+}
+
+figcaption{
+	margin-top: 5px;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+footer{
+	width: 100%;
+	margin: 0px;
+	background-color: #696969;
+	color: white;
+}
+
+footer h2{
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+.blockquote-footer{
+	background-color: #FAF0E6;
+}
+#x{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+}
+
+.kontakt{
+	float: left;
+	height: 140px;
+}
+
+ ul{
+	list-style-type: none;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul > li{
+    display: block;
+	float: left;
+}
+
+.kontakt a{
+	font-size: 25px;
+}
+
+a{
+	color: white;
+}
+
+a:hover{
+	text-decoration: none;
+	text-shadow: 5 5 15 black;
+	color: 	#B0C4DE;
+}
+
+
+.stopka ul> li{
+	clear: both;
+	display: inline;
+	font-size: 12px;
+	padding-top: 5px;
+}
+
+#info{
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	background-color: 	#708090;
+}
+
+#formularz{
+	background-color: #F0F8FF;
+	margin: 0px 0px;
+	width: 30%;
+	left: 0;
+}
+
+ blockquote{
+	 background-color: green;
+     position: relative;
+     color: white; 
+     padding: 15px 25px;
+     margin: 10px 10px 0;	
+     border-radius: 10px;	 
+ }
+  blockquote:after {
+		   border: 20px solid;
+		   border-color: green transparent transparent;
+		   position:absolute;
+		   width: 0; height:0;
+		   top:100%; left: 20px;
+		   content: '';
+		   }

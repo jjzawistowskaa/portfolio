@@ -1,0 +1,196 @@
+
+
+* {padding:0;margin:0;}
+h2 {padding: 10px; text-align:center;}
+
+html {width:100%;height:100%;}
+
+body {font-family:Arial, Helvetica, Sans-serif;font-size:14px;line-height:1.5;font-weight:400;color:#434343;background:#FFF;}
+
+ 
+
+.container {width:1050px; margin:0 auto;}
+
+a:link 
+{
+    color: #fff;
+	text-decoration: none;
+}
+
+header {margin:0 px;}
+header {width: 100%;}
+
+
+aside {float:left;width:30%; margin:0px;}
+
+aside nav ul {list-style:none;}
+
+aside nav ul li {margin-bottom:1px;}
+
+aside nav ul li a {display:block;text-decoration:none;color:#000;background:#ADD8E6;padding:8px 20px;}
+
+aside nav ul li a:hover{background:#212121;color:#FFF;}
+
+#kontakt ul { list-style: none; text-align: center; padding: 0px 0px;}
+ 
+#kontakt ul li { display: block; float: left; padding: 12px 25px; width: 18%;}
+
+#main {float:right;width:65%;margin:5px 10px; text-align:  justify; }
+#main h1{padding: 5px;}
+ 
+#oferta{ width: 100%; height: 900px; text-align: center; margin-top: 20px;}
+
+.photo{
+	float: left;
+	width: 45%;
+	height: 40%;
+	margin: 2.5%;
+}
+
+ img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay
+{
+	position: relative;
+    width: 100%;
+	height: 100%;
+}
+
+.overlay .link
+{
+	position: absolute;
+	display: block;
+	width: 100%;
+	font-size: 24px;
+	color: white;
+	height: 65px; 
+	background-color: #111;
+	left: 0px;
+	bottom: 0px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+
+
+#studio_photo{
+	margin: 5px;
+	float: left;
+	width: 35%;
+	height: auto;
+}
+
+#opis{ 
+  margin: 10px;
+  float: left;
+  width: 60%;
+  height: 200px;
+  text-align: justify;
+  display: table;
+}
+
+#opis p{
+	 display: table-cell;
+     vertical-align:middle;
+}
+
+.sesja{
+	width: 30%; height: auto;    position: relative; 
+	float: left;
+	margin: 1.4%; 
+}
+
+.sesja .overlay1{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+	text-align: center;
+}
+
+.sesja:hover .overlay1{
+    display: block;
+    background: rgba(0, 0, 0, .5);
+}
+
+.sesja:hover .overlay1 p { padding: 25%;}
+
+
+#kontakt{
+	background-color: #7a7a7a;
+	width: 100%;
+	min-height: 120px;
+	width:100%;
+	color: white;
+}
+
+.overlay:hover .link
+{
+	opacity: 0.8;
+}
+
+
+@media (min-width: 1100px) {
+
+.container {width:1050px;}
+
+aside {width:30%;}
+
+#main {width:65%;}
+
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+
+.container {width:950px;}
+
+aside {width:30%;}
+
+#main {width:65%;}
+
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+
+.container {width:750px;}
+
+aside {width:30%;}
+
+#main {width:65%;}
+#kontakt {min-height: 180px;}
+#kontakt ul li { width: 35%; }
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+
+.container {width:450px;}
+
+aside,
+
+#main {width:100%;}
+.photo{width:95%;}
+#studio_photo, .sesja{width:100%; margin:10px 0px 0px 0px ;}
+#opis{width:100%;margin:0px;}
+#kontakt ul li { float: none; width: 80%;  }
+}
+
+@media (max-width: 500px) {
+
+.container {width:450px;}
+
+aside,
+
+.photo{width:95%;}
+#main {width:100%;}
+#studio_photo, .sesja{ width: 100%; margin:10px 0px 0px 0px ;}
+#opis{width:100%; margin:0px;}
+#kontakt ul li { float: none; width: 80%;  }
+}

@@ -1,0 +1,161 @@
+@import "mixins";
+
+$navColor : #fff;
+$colorTla: #c0f;
+$navHover: 	#B0E0E6;
+
+h2{font-size: 32px; padding: 16px;}
+h3{font-size: 24px; margin-bottom: 15px; opacity: 0.75;}
+
+#main{
+  background: url(img/intro1.jpg );
+  background-position: center; 
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh; 
+  min-height: 400px;
+}
+
+#main_small{ display: none; float: left; margin: 25px;}
+
+#main_nav{ 
+   ul{
+      width: 100%;  
+   }
+   
+   li{
+     float: left; 
+	 width: (100% / 5);
+	 font-size: 24px;
+   }
+   
+   a{
+   	 text-decoration : none;
+	 padding: 24px;
+	 display: block; 
+	 text-align: center;
+	 color: $navColor;
+	 &:hover {
+	  background: $navHover;
+	 }
+   }
+}
+
+
+
+#imie{
+   position: absolute; 
+   top: 50%; left: 50%; 
+   transform: translate(-50%, -50%);
+   width: 50vw;  height: 35vh; 
+   color: $navColor;
+   letter-spacing: 1px; 
+   h1{ font-size: 42px; }
+   h3{ padding: 20px;}
+}
+
+#omnie{ 
+ width: 90%; margin-left: auto; margin-right: auto; margin-top: 20px; 
+ }
+ 
+#zdjecie {
+ float: left; 
+ width: 35%; 
+ margin-left: auto; margin-right: auto;
+ img { max-width: 200px; height: auto;}
+ }  
+ 
+ #opis{
+ float: left;  
+ width: 60%;
+ display: table;
+ min-height: 220px; 
+ padding: 10px;
+ span {
+ font-size: 18px; 
+ vertical-align: middle; display: table-cell; 
+ text-align: justify;
+ }
+ span span{
+ font-size: 22px; padding: 10px 50px;
+ }
+ }
+ 
+ #grafika {
+ width: 60%; margin-top: 20px; margin-left: auto; margin-right: auto;
+ h4{ font-size: 30px;} 
+ li{
+    @include grid(3, 5%);
+	img {
+	width: 100%;
+	}	 
+ }
+ }
+
+#edu {width:90%; margin-right: auto; margin-left: auto; 
+    h3{margin-top: 25px; }}
+.edu_rok{
+     width: 29%; 
+     height: 60px; 
+     float: left;  
+      p { padding: 10px; font-size : 21px;}
+}
+.edu_tresc{
+    width: 70%;
+    height: 60px;  
+    float: left; text-align: left;
+    p { padding: 10px; font-size : 20px;}
+}
+
+#prace{ width:90%; margin: 20px auto; }
+.projekt{ position: relative; width: 30%; margin: 1.5%; float: left; opacity: 0.8;
+    img{ width: 100%;}
+    &:hover { opacity: 1}}
+.napis{ position: absolute; top: 50%; left: 50%; color: white; font-size: 28px; letter-spacing: 1px; width: 100%;
+        transform: translate(-50%, -50%);}
+
+footer{
+	margin: 0px;
+	background-color:   #3d944d;
+    height: 100px;
+	border: 1px #abe8ba solid;
+	color: white;
+}
+
+#kontakt{
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	top: 30px;
+}
+
+//Tablet
+@media (max-width: 734px) {
+.projekt{  width: 45%; margin: 10px 2.5%;}
+    .napis{ font-sieze: 26px;}
+    
+    .edu_rok{ height: 75px;}
+    .edu_tresc{ height: 75px;}
+}
+
+
+
+//Smartfon
+@media (max-width: 599px) {
+    #zdjecie {  width: 100%;}
+    #opis{ margin-left: auto; margin-right: auto; float: none; width:90%;}
+    #imie{   width: 90vw; h1{ font-size: 36px; }}
+    #main_small{ display: block;}
+    #main_nav{ 
+    display:none;  
+    ul {list-style:none;}
+    ul li {margin-bottom:1px; }
+    ul li a {display:block;  font-size:14px; color:#fff; padding:12px 20px;}
+    }
+    .projekt{ float: none; width: 100%; margin: 20px 0px;}
+    .edu_rok{ height: 90px;}
+    .edu_tresc{ height: 90px;}
+}

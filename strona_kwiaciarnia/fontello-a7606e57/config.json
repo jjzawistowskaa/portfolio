@@ -1,0 +1,46 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4743b088aa95d6f3b6b990e770d3b647",
+      "css": "facebook-squared",
+      "code": 62216,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b86df50a2d898bfcd371fa86c0b8b2fb",
+      "css": "user-o",
+      "code": 62144,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "90e0aff5c929e444038355746a952aaf",
+      "css": "shopping-basket",
+      "code": 62097,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7ea4150d9eb2d2ade9491d5ad905718c",
+      "css": "credit-card-alt",
+      "code": 62083,
+      "src": "fontawesome"
+    }
+  ]
+}
