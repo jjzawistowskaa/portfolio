@@ -24,7 +24,7 @@ h3 {
   width: 100%; }
 #main_nav li {
   float: left;
-  width: 20%;
+  width: 22.2222222222%;
   font-size: 24px; }
 #main_nav a {
   text-decoration: none;
@@ -45,7 +45,7 @@ h3 {
   color: #fff;
   letter-spacing: 1px; }
   #imie h1 {
-    font-size: 42px; }
+    font-size: 40px; }
   #imie h3 {
     padding: 20px; }
 
@@ -99,14 +99,16 @@ h3 {
 #edu {
   width: 90%;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  background-color: #E6E6FA; }
   #edu h3 {
     margin-top: 25px; }
 
 .edu_rok {
-  width: 29%;
+  width: 28%;
   height: 60px;
-  float: left; }
+  float: left;
+  border-right: 1px solid black; }
   .edu_rok p {
     padding: 10px;
     font-size: 21px; }
@@ -118,6 +120,7 @@ h3 {
   text-align: left; }
   .edu_tresc p {
     padding: 10px;
+    padding-left: 35px;
     font-size: 20px; }
 
 #prace {
@@ -171,9 +174,13 @@ footer {
 
   .edu_rok {
     height: 75px; }
+    .edu_rok p {
+      font-size: 19px; }
 
   .edu_tresc {
-    height: 75px; } }
+    height: 75px; }
+    .edu_tresc p {
+      font-size: 18px; } }
 @media (max-width: 599px) {
   #zdjecie {
     width: 100%; }
@@ -195,14 +202,18 @@ footer {
   #main_nav {
     display: none; }
     #main_nav ul {
-      list-style: none; }
+      list-style: none;
+      padding-top: 25px; }
     #main_nav ul li {
-      margin-bottom: 1px; }
+      margin-bottom: 1px;
+      width: 90px;
+      height: 50px;
+      padding: 0px; }
     #main_nav ul li a {
       display: block;
-      font-size: 14px;
+      font-size: 18px;
       color: #fff;
-      padding: 12px 20px; }
+      padding: 15px 0px; }
 
   .projekt {
     float: none;
@@ -211,8 +222,12 @@ footer {
 
   .edu_rok {
     height: 90px; }
+    .edu_rok p {
+      font-size: 17px; }
 
   .edu_tresc {
-    height: 90px; } }
+    height: 90px; }
+    .edu_tresc p {
+      font-size: 16px; } }
 
 /*# sourceMappingURL=main.css.map */
